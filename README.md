@@ -90,7 +90,6 @@ kubectl apply -f redis.yaml
 
 Add the volumemounts and volumes in your Helm chart:
 ```
-agents:
   volumes:
   - name: redis
     hostPath:
