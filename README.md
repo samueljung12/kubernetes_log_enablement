@@ -47,7 +47,7 @@ Run the following command:
 ```
 kubectl get pods
 ```
-and this will return all the pods running in your current setup. We should be expecting to see 2 pods created (1 is the DD node agent while the other is the DD cluster agent). Your node pod name should take the format of ```<RELEASE_NAME>-datadog-xyz123``` (xyz123 will be different everytime you deploy your Helm Chart. this also applies to re-deploying the same file as well). Your cluster pod name should take the format of ```<RELEASE_NAME>-datadog-cluster-xyz123```.
+and this will return all the pods running in your current setup. We should be expecting to see 2 pods created (1 is the DD node agent while the other is the DD cluster agent). Your node pod name should take the format of ```<RELEASE_NAME>-datadog-xyz123``` (xyz123 will be different everytime you deploy your Helm Chart. this also applies to re-deploying the same file as well). Your cluster pod name should take the format of ```<RELEASE_NAME>-datadog-cluster-agent-xyz123-xyz123```.
 
 # Step 4 - Verify logs are coming in your DD admin
 You should see logs start populating in your Live Tail page if the above is configured correctly.
