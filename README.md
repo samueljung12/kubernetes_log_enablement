@@ -51,7 +51,7 @@ and this will return all the pods running in your current setup. We should be ex
 
 # Step 4 - Verify logs are coming in your DD admin
 You should see logs start populating in your Live Tail page if the above is configured correctly.
-These logs are stdout/stderr or short for standard output & standard error meaning it is outputting whatever the container is outputting. But now what if we want to collect from a custom log file? Can we do that? The answer is yes btw if you look at Step 5.
+These logs are stdout/stderr or short for standard output & standard error meaning it is outputting whatever the container(s) in the pod are outputting. But now what if we want to collect from a custom log file? Can we do that? The answer is yes btw if you look at Step 5.
 
 # Step 5 - Configure Helm Chart to collect logs from a file as opposed to stdout/stderr
 We're gonna use our beloved integration redis as an example here and you can copy/paste the below configuration into a new file called ```redis.yaml```. 
