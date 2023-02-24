@@ -142,3 +142,6 @@ kubectl exec -it <AGENT_POD_NAME> agent status
 ```
 kubectl delete pod <pod_name>
 ```
+
+Collaboration KBs:
+1) https://datadoghq.atlassian.net/wiki/spaces/TS/pages/1248530082/How+to+test+Kubernetes+yourself by Steve Wenzel (great great ready btw)
