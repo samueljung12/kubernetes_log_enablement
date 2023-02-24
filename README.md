@@ -11,7 +11,7 @@ Sandbox Demo showcasing Log Enablement w/ MiniKube
 # Step 1 - Enable Log Collection
 To my understanding, there are 2 ways to go about setting your API key via the Helm Chart: 
 1) You can set it in the command line: 
-2) ```helm install <RELEASE_NAME> -f values.yaml --set datadog.site='datadoghq.com' --set datadog.apiKey=<API_KEY> --set datadog.appKey=<APP_KEY> datadog/datadog```
+```helm install <RELEASE_NAME> -f values.yaml --set datadog.site='datadoghq.com' --set datadog.apiKey=<API_KEY> --set datadog.appKey=<APP_KEY> datadog/datadog```
 
 As you can see, you can also set the datadog.site and datadog.appKey as well! Pretty convenient eh?
 
