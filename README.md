@@ -144,4 +144,4 @@ kubectl delete pod <pod_name>
 ```
 
 Collaboration KBs:
-1) https://datadoghq.atlassian.net/wiki/spaces/TS/pages/1248530082/How+to+test+Kubernetes+yourself by Steve Wenzel (great great ready btw)
+1) https://datadoghq.atlassian.net/wiki/spaces/TS/pages/1248530082/How+to+test+Kubernetes+yourself by Steve Wenzel (recommended read)
