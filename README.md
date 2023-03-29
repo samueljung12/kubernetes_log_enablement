@@ -7,6 +7,7 @@ Sandbox Demo showcasing Log Enablement w/ MiniKube
 3. You must have Minikube installed 
 4. It would be nice to have a Helm chart available for use but in case you don't and need one for reference, please refer here: https://github.com/DataDog/helm-charts/blob/main/charts/datadog/values.yaml 
 
+KB for installing everything: https://datadoghq.atlassian.net/wiki/spaces/TS/pages/1248530082/How+to+test+Kubernetes+yourself#Setup-Minikube-environment
 
 # Step 1 - Enable Log Collection
 To my understanding, there are 2 ways to go about setting your API key via the Helm Chart: 
