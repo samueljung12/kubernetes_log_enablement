@@ -24,15 +24,38 @@ As you can see, you can also set the ```datadog.site``` and ```datadog.appKey```
 For example:
 ``` 
 datadog:
-  apiKey: <Redacted>
-  site: datadoghq.com #this defaults to datadoghq.com if not specified
-  
-  ...
-  
+  apiKey: <API_KEY>
+  site: datadoghq.com
+  clusterName: <CLUSTER_NAME> 
+  # Disable kubelet TLS Verification in minikube
+  kubelet:
+    tlsVerify: false
+  # confd: {}
+  kubeStateMetricsEnabled: false
+  kubeStateMetricsCore:
+    enabled: false
   logs:
     enabled: true
     containerCollectAll: true
-  ...
+  apm:
+    socketEnabled: false
+    portEnabled: false
+  processAgent:
+    enabled: true
+    processCollection: true
+  orchestratorExplorer:
+    enabled: true
+  
+  # These 3 integrations error by default in minikube
+  ignoreAutoConfig:
+    - etcd
+    - kube_controller_manager 
+    - kube_scheduler 
+clusterAgent:
+  enabled: true
+  admissionController:
+    enabled: false
+    mutateUnlabelled: false
 ```
 
 # Step 2 - Deploy Helm Chart
