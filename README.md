@@ -164,5 +164,9 @@ kubectl get pods
 ```
 kubectl delete pod <POD_NAME>
 ```
+# Uninstall your Helm Chart
+```
+helm uninstall <RELEASE_NAME>
+```
 # Collaboration KBs:
 1) https://datadoghq.atlassian.net/wiki/spaces/TS/pages/1248530082/How+to+test+Kubernetes+yourself by Steve Wenzel (recommended read)
